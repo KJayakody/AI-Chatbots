@@ -1,1 +1,1 @@
-# AI-Chatbots
+This repository contains all my attempts at making a AI powered chatbot for a project we started in the InfoSchol Induction program. Most of these attempts are ones I did by learning from YouTube videos.
