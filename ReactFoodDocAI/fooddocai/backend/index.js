@@ -9,7 +9,7 @@ const app = express();
 const upload = multer();
 
 const configuration = new Configuration({
-    apiKey: 'Ysk-proj-6PAGsHr5x615t3iF5NxKT3BlbkFJq9vpyrVPa4EJYrd0YfSk',
+    apiKey: 'YOUR_OPENAI_API_KEY',
 });
 const openai = new OpenAIApi(configuration);
 

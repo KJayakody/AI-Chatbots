@@ -8,7 +8,7 @@ export default function App() {
 
   const handleGenerate = async () => {
     try {
-      const res = await axios.post('http://your-server-ip:3000/generate', { text: input });
+      const res = await axios.post('http://YOUR_IP_ADDRESS:3000/generate', { text: input });
       setResponse(res.data.response);
     } catch (error) {
       console.error(error);

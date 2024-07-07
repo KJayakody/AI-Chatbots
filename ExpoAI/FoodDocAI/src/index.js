@@ -6,7 +6,7 @@ import axios from "axios"
 const ChatBot = () => {
     const [messages, setMessages] = useState([])
 
-    const YOUR_CHATGPT_API_KEY = 'sk-proj-e06lS00RNrUSjT4624TtT3BlbkFJPmHvSbrn1RlTW8mc7dvF'
+    const YOUR_CHATGPT_API_KEY = 'YOUR_CHATGPT_API_KEY'
 
     const handleSend = async (newMessages = []) => {
         try {
@@ -21,7 +21,7 @@ const ChatBot = () => {
                 // if the message does not contain any nutrition related keywords, respond with a default message
                 const botMessage = {
                     id: new Date().getTime() + 1,
-                    text: "I;m your personal FoodDoc, ask me anything related to food nutrition",
+                    text: "I'm your personal FoodDoc, ask me anything related to food nutrition",
                     createdAt: new Date(),
                     user: {
                         _id: 2,

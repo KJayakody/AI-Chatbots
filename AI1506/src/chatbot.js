@@ -19,7 +19,7 @@ const Chatbot = () => {
     const [error, setError] = useState(null);
     const [isSpeaking, setIsSpeaking] = useState(false);
 
-    const API_KEY = "AIzaSyBlE_Kh5-Tp8KIz_Jef03ozp6a_KC9c5ys";
+    const API_KEY = "YOUR_GEMNI_API_KEY";
 
     const handleUserInput = async () => {
         // Add user input to chat
@@ -35,7 +35,7 @@ const Chatbot = () => {
 
         try {
             const response = await axios.post(
-                `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${AIzaSyBlE_Kh5-Tp8KIz_Jef03ozp6a_KC9c5ys}`,
+                `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${YOUR_GEMNI_API_KEY}`,
                 {
                     contents: updatedChat,
                 }

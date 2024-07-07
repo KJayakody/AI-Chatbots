@@ -3,7 +3,7 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-const apiKey = 'AIzaSyC05zwlermD_YDEXYXlkP0o5cv1fy9m7SY';
+const apiKey = 'YOUR_GOOGLE_API_KEY';
 const genAI = new GoogleGenerativeAI(apiKey);
 
 const app = express();

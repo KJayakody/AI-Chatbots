@@ -5,7 +5,7 @@ import pathlib
 
 load_dotenv()
 
-genai.configure(api_key=os.getenv("AIzaSyC05zwlermD_YDEXYXlkP0o5cv1fy9m7SY"))
+genai.configure(api_key=os.getenv("YOUR_API_KEY"))
 
 model = genai.GenerativeModel('models/gemini-pro')
 

@@ -14,7 +14,7 @@ export default function App() {
     setMessage('');
 
     try {
-      const response = await axios.post('http://172.22.2.92:3000/chat', { message }); // http://YOUR_IP_ADDRESS:3000/chat
+      const response = await axios.post('http://YOUR_IP_ADDRESS:3000/chat', { message }); // http://YOUR_IP_ADDRESS:3000/chat
       setChatHistory([...newChatHistory, { sender: 'bot', text: response.data.response }]);
     } catch (error) {
       console.error('Error sending message:', error);

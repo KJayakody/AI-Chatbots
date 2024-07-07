@@ -181,6 +181,6 @@ app.post('/chat', async (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on http://192.168.1.100:${port}`); // http://YOUR_IP_ADDRESS:
+    console.log(`Server is running on http://YOUR_IP_ADDRESS:${port}`); // http://YOUR_IP_ADDRESS:
 
 });
